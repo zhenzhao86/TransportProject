@@ -1,0 +1,9 @@
+# Curl commands
+
+//Question 3a
+curl -H "Content-Type: application/json" -X POST -d "{\"stop\":\"98011\",\"dayofweek\":\"SUNDAY\"}" https://7tubmgqkq3.execute-api.ap-northeast-1.amazonaws.com/testing/busstopinfo
+curl -H "Content-Type: application/json" -X POST -d "{\"stop\":\"96209\",\"dayofweek\":\"SUNDAY\"}" https://7tubmgqkq3.execute-api.ap-northeast-1.amazonaws.com/testing/busstopinfo
+
+//Question 3b
+curl -H "Content-Type: application/json" -X POST -d "{\"dayofweek\":\"SUNDAY\",\"direction\":0}" https://7tubmgqkq3.execute-api.ap-northeast-1.amazonaws.com/testing/netonboard -o "file1.txt"
+curl -H "Content-Type: application/json" -X POST -d "{\"dayofweek\":\"WEEKDAY\",\"direction\":1}" https://7tubmgqkq3.execute-api.ap-northeast-1.amazonaws.com/testing/netonboard
